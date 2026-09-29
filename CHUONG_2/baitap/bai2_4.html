@@ -6,10 +6,16 @@
   <title>Hello, World!</title>
 </head>
 <body>
-  <table>
+  <table style="width:100%; margin-bottom:20px;">
     <tr>
-      <td><b>TRUONG DAI HOC BAC LIEU</b><br>KHOA KI THUAT VA CONG NGHE</td>
-      <td><b>CONG HOA XA HOI CHU NGHIA VIET NAM</b><br>Doc lap-Tu do-Hanh phuc</td>
+      <td style="text-align:center; font-weight:bold;">
+        TRƯỜNG ĐẠI HỌC BẠC LIÊU<br>
+        KHOA KỸ THUẬT VÀ CÔNG NGHỆ
+      </td>
+      <td style="text-align:center; font-weight:bold;">
+        CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM<br>
+        Độc lập - Tự do - Hạnh phúc
+      </td>
     </tr>
   </table>
   <font face="Verdana" size="1" color="red">
@@ -19,30 +25,26 @@
   </font>
   <form method="post" action="">
     <p>
-      <font face="Time new roman" size="2">Tai Khoan:</font>
+      <font face="Time new roman" size="2">Họ Tên:</font>
       <input type="text" name="taikhoan" size="15" value=" " maxlength="15">
-    </p>
-    <p>
-      <font face="Time new roman" size="2">Mat Khau:</font>
-      <input type="text" name="matkhau" size="15" value=" " maxlength="15">
     </p>
   </form>
   <form>
-    <p>Gioi tinh:</p>
+    <p>Giới tính:</p>
     <form method="post">
       <p>
         <input type="radio" value="1" name="gioitinh" checked>Nam
-        <input type="radio" value="1" name="gioitinh" value="0">Nu
+        <input type="radio" value="1" name="gioitinh" value="0">Nữ
       </p>
     </form>
   </form>
   <form>
-    <p>Nganh Thi:</p>
+    <p>Ngành Thi:</p>
     <form method="post">
       <p>
-        <input type="radio"   name="nghanh" checked>Cong Nghe Thong Tin
-        <br> <input type="radio"  name="nghanh">Mam non<br>
-        <input type="radio"  name="nghanh">Am nhac
+        <input type="radio"   name="nghanh" checked>Công Nghệ Thông Tin
+        <br> <input type="radio"  name="nghanh">Mầm non<br>
+        <input type="radio"  name="nghanh">Âm nhạc
       </p>
       <p><input type="submit" value="submit" name="B1"> <input type="Reset"v alue="reset" name="B2"></p>
     </form>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.menu {
+    background: #333;
+    display: flex;
+}
+.menu a {
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+}
+.menu a:hover {
+    background: gray;
+}
+.item {
+    position: relative;
+}
+.sub {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #333;
+    min-width: 180px;
+}
+.sub a {
+    display: block;
+    white-space: nowrap;
+}
+.item:hover .sub {
+    display: block;
+}
+.sub-item {
+    position: relative;
+}
+.sub2 {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background: #333;
+    min-width: 180px;
+}
+.sub2 a {
+    display: block;
+}
+.sub-item:hover .sub2 {
+    display: block;
+}
+</style>
+</head>
+
+<body>
+
+<div class="menu">
+
+    <a href="index.html">Trang chủ</a>
+    <a href="gioithieu.html">Giới thiệu</a>
+
+    <div class="item">
+        <a href="#">Khóa học</a>
+
+        <div class="sub">
+
+            <div class="sub-item">
+                <a href="tinhoccanban.html">Tin học căn bản </a>
+
+                <div class="sub2">
+                    <a href="microsoftword.html">Microsoft Word 2010</a>
+                    <a href="microsofexcel.html">Microsoft excel 2010</a>
+                    <a href="microsofpowerpoint.html">Microsoft powerpoint 2010</a>
+                </div>
+            </div>
+
+            <a href="tinhocphothong.html">Tin học phổ thông</a>
+            <a href="laptrinhc.html">Lập trình C</a>
+            <a href="thietkewebsite.html">Thiết kế website</a>
+
+        </div>
+    </div>
+
+    <a href="baiviet.html">Bài viết</a>
+    <a href="thuthuat.html">Thủ thuật</a>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <SCript>
+      var d = new Date;
+      var namsinh,namhientai;
+      namhientai=d.getFullYear();
+      do
+      {
+            namsinh=prompt("nhap vao nam sinh cua ban:","");
+      }
+      while(parseInt(namsinh) >namhientai);
+      alert("tuổi hiện tại của bạn là:"+(namhientai-namsinh));
+    </SCript>
+</body>
+</html>

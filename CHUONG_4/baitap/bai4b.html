@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.write("Lấy nội dung trong textbox");
+        document.write("<br>");
+        function cthoten()
+        {
+            alert(txthoten.value);
+            alert("bạn hãy nhập vào ô text và thử lại");
+        }
+        function ctdonvi()
+         {
+            alert(txtdonvi.value);
+            alert("bạn hãy nhập vào ô text và thử lại");
+         }
+    </script>
+    <input type="button" name="hoten" value="họ tên" 
+    onclick="cthoten()">
+    <input type="button" name="donvi " value="đơn vị" onclick="ctdonvi()">
+    <input type="text" id="txthoten" value="chào"  size="40">
+    <input type="text" id="txtdonvi" value="đơn vị" size="40">
+</body>
+</html>

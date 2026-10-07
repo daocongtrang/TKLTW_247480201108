@@ -2,6 +2,42 @@
 <html>
 <head>
 <style>
+ /* -Thuộc tính display:Giúp xác định cách một phần tử hiển thị trên trang web
+    +Các  giá trị phổ biến của display:
+    inline: Hiển thị phần tử như một phần tử nội tuyến (ví dụ <span>). Không thể áp dụng width và height. Đây là giá trị mặc định.
+    block: Hiển thị phần tử như một khối (ví dụ <p>). Luôn bắt đầu trên dòng mới và chiếm toàn bộ chiều ngang.
+    contents: Làm phần tử cha biến mất, các phần tử con sẽ trở thành con trực tiếp của phần tử cha cấp trên.
+    flex: Hiển thị phần tử như một khối flex container.
+    grid: Hiển thị phần tử như một khối grid container.
+    inline-block: Hiển thị như phần tử nội tuyến nhưng có thể đặt width và height.
+    inline-flex: Hiển thị như một phần tử nội tuyến nhưng là flex container.
+    inline-grid: Hiển thị như một phần tử nội tuyến nhưng là grid container.
+    inline-table: Hiển thị như một bảng nội tuyến.
+    list-item: Hoạt động giống như một phần tử <li>.
+    table: Hoạt động như một bảng <table>.
+    table-caption: Hoạt động như một <caption>.
+    table-column-group: Hoạt động như <colgroup>.
+    table-cell: Hoạt động như <td>.
+    table-column: Hoạt động như <col>.
+    table-row: Hoạt động như <tr>.
+    none: Ẩn hoàn toàn phần tử, không chiếm không gian.
+    initial: Đặt về giá trị mặc định ban đầu.
+    -Thuộc tính padding:Giúp tạo khoảng trống giữa nội dung và viền.
+    -Thuộc tính text-decoration:Giúp thêm hoặc loại bỏ các hiệu ứng trên văn bản.
+    +Các giá trị phổ biến của text-decoration:
+    none: Không có trang trí (loại bỏ gạch dưới mặc định của link).
+    underline: Gạch dưới văn bản.
+    overline: Gạch phía trên văn bản.
+    line-through: Gạch ngang giữa văn bản (thường dùng để thể hiện giá giảm).
+    -Thuộc tính white-space:Giúp kiểm soát cách trình duyệt kiểm soát khoảng trắng và xuống dòng.
+    +Các giá trị phổ biến của white-space:
+    normal: Giá trị mặc định. Trình duyệt gộp nhiều khoảng trắng thành một, và tự động xuống dòng khi cần.
+    nowrap: Không cho phép xuống dòng tự động. Văn bản sẽ nằm trên một dòng cho đến khi gặp thẻ <br>.
+    pre: Giữ nguyên tất cả khoảng trắng và xuống dòng như trong mã nguồn (giống thẻ <pre>).
+    pre-wrap: Giữ nguyên khoảng trắng và xuống dòng, nhưng vẫn cho phép xuống dòng tự động khi văn bản quá dài.
+    pre-line: Gộp nhiều khoảng trắng thành một, nhưng vẫn giữ xuống dòng trong mã nguồn.
+    break-spaces: Giữ nguyên khoảng trắng, cho phép xuống dòng tại khoảng trắng, và khoảng trắng ở cuối dòng vẫn được hiển thị.
+ */   
 .menu {
     background: #333;
     display: flex;

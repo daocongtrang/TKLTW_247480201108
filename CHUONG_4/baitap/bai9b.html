@@ -6,23 +6,18 @@
     <title>Document</title>
 </head>
 <body>
+    <h2>Nhập danh sách thiết bị văn phòng</h2>
+    <textarea id="device" rows="5" cols="40" placeholder="Nhập tên thiết bị"></textarea><br>
+    <button onclick="show">Hiển thị thiết bị computer</button>
+    <h3>Kết quả</h3>
+    <div id="result"></div>
     <script>
-        var x,soluong;
-        var ds= new Array(100);
-        soluong=prompt("bạn cần nhập bao nhiêu món");
-        for( i=0;i<soluong;i++)
-         {
-            ds[i]=prompt("nhập vào tên:");
-         }
-         ds.sort();
-         document.write("<h1>Danh sách đã sắp xếp là:</h1>");
-         for(x in ds)
-         {
-           if(ds[x]=="computer") 
-        { document.write(ds[x]);
-            document.write("<br>");
-         }
-        }
+       function show()
+       {
+            var input= document.getElementById("device");
+            var array=input.split(",");
+            var computer= array.filter(item)
+       }
     </script>
 </body>
 </html>

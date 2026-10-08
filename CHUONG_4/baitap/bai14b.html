@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Máy tính đơn giản</title>
+</head>
+
+<body>
+    <h1>Hãy nhập hai số và chọn phép tính</h1>
+
+    <input type="text" id="hangso1">
+    <input type="text" id="hangso2">
+    <input type="text" id="ketqua" readonly>
+
+    <br><br>
+
+    <input type="radio" name="pheptinh" value="+" id="cong">
+    <label for="cong">+</label>
+
+    <input type="radio" name="pheptinh" value="-" id="tru">
+    <label for="tru">-</label>
+
+    <input type="radio" name="pheptinh" value="*" id="nhan">
+    <label for="nhan">×</label>
+
+    <input type="radio" name="pheptinh" value="/" id="chia">
+    <label for="chia">÷</label>
+ 
+    <br><br>
+
+    <input type="button" value="Tính" onclick="tinh()">
+
+    <script>
+        function tinh() {
+            let a = parseFloat(document.getElementById('hangso1').value);
+            let b = parseFloat(document.getElementById('hangso2').value);
+
+            let phepTinhs= document.getElementsByName("pheptinh");
+            let phepTinh=null;
+for (let i = 0; i < phepTinhs.length; i++) {
+    if (phepTinhs[i].checked) {
+        phepTinh=phepTinhs[i];
+        break;
+    }
+}
+            if (isNaN(a) || isNaN(b)) {
+                alert("Vui lòng nhập hai số!");
+                return;
+            }
+
+            if (!phepTinh) {
+                alert("Vui lòng chọn phép tính!");
+                return;
+            }
+
+            let ketqua;
+
+            if (phepTinh.value == "+") {
+                ketqua = a + b;
+            }
+            else if (phepTinh.value == "-") {
+                ketqua = a - b;
+            }
+            else if (phepTinh.value == "*") {
+                ketqua = a * b;
+            }
+            else if (phepTinh.value == "/") {
+                if (b == 0) {
+                    alert("Không thể chia cho 0!");
+                    return;
+                }
+
+                ketqua = a / b;
+            }
+
+            document.getElementById('ketqua').value = ketqua;
+        }
+    </script>
+</body>
+</html>
